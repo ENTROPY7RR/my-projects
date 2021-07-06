@@ -7,11 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>This is the second page that I created</h1>
+    {% for x in object %}
 
-    <h2>This is the first number {{ value1 }}</h2>
-    <h2>This is the second number {{ value2 }}</h2>
+        <li>Welcome to Hell Kitchen, {{ x }}!</li>
 
-    <h2>The total of {{ value1 }} and {{ value2 }} is {{ value3 }}</h2>
+    {% endfor %}    
 </body>
 </html>
